@@ -1,0 +1,18 @@
+<html>
+   <body>
+      
+      <form action="API_ppm_fotos.php" method="POST" enctype="multipart/form-data">
+         <label>Codigo de Programaci&oacute;n (actividad de manenimiento programada):</label><br>
+         <input type="text" name="programacion" id="programacion" /> <br>
+         <label>Posici&oacute;n:</label><br>
+         <select id ="posicion" name ="posicion">
+            <option value="1" selected >Foto del "Antes del mantenimiento" (valor 1)</option>
+            <option value="2">Foto del "Despues del mantenimiento" (valor 2)</option>
+         </select>
+         <br><br>
+         <input type="file" name="photo" /><hr>
+         <input type="submit" value="Upload" />
+      </form>
+      
+   </body>
+</html>

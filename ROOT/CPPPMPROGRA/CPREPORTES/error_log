@@ -1,0 +1,42 @@
+[13-Oct-2020 11:06:45 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[13-Oct-2020 11:12:23 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[13-Oct-2020 11:12:52 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[13-Oct-2020 15:15:48 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[28-Oct-2020 14:09:58 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[28-Oct-2020 14:10:52 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMPROGRA/CPREPORTES/REPorden.php(254): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272

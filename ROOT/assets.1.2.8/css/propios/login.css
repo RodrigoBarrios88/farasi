@@ -1,0 +1,7 @@
+.btn, .navbar .navbar-nav > a.btn {
+  padding: 11px 22px;
+      padding-right: 22px;
+      padding-left: 22px;
+  cursor: pointer;
+  transition: all 150ms linear;
+}

@@ -1,0 +1,24 @@
+[13-Oct-2020 11:09:42 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMEJECUCION/CPREPORTES/REPrevision.php(273): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[13-Oct-2020 15:35:11 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMEJECUCION/CPREPORTES/REPrevision.php(273): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[13-Oct-2020 16:21:41 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/demo/ROOT/Clases/ClsUtil.php on line 74
+[13-Oct-2020 16:21:41 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/demo/ROOT/Clases/ClsUtil.php on line 74
+[13-Oct-2020 16:21:41 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/demo/ROOT/Clases/ClsUtil.php on line 74
+[13-Oct-2020 16:21:41 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/ACTIVOS/2858b01a00fad1885.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPPPMEJECUCION/CPREPORTES/REPrevision.php(273): FPDF->Image('../../../CONFIG...', 10, 125, 60, 40, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272

@@ -1,0 +1,107 @@
+.rectangulo-titulo {
+  width: 100%; 
+  border: 1px solid #555;
+  background: #428bca;
+  color: #fff;
+  padding: 5%;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rectangulo-texto {
+  width: 100%; 
+  border: 1px solid #428bca;
+  background: #C9D9E5;
+  color: #0B4E84;
+  padding: 5%;
+  margin: 0px;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.ovalo-titulo {
+  width: 100%; 
+  border: 1px solid #555;
+  background: #428bca;
+  border-radius: 60px;
+  color: #fff;
+  padding: 8%;
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ovalo-texto {
+  width: 100%; 
+  border: 1px solid #428bca;
+  background: #C9D9E5;
+  color: #0B4E84;
+  border-radius: 60px;
+  padding: 8%;
+  margin: 0px;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.top-line{
+   border-top: 1px solid #555;
+}
+
+.left-line{
+  border-left: 1px solid #555;
+}
+
+.right-line{
+  border-right: 1px solid #555
+}
+
+.lista-diagrama{
+  margin: 0px;
+  padding: 0px;
+  padding-left: 5px;
+}
+
+.celda-diagrama{
+  padding: 5px;
+}
+
+
+/*ESTILOS PARA TABLAS NOTIFICACIONES*/
+.files_in_aprobation_pares{
+  border-left: #1482FF 5px solid;
+}
+.files_in_aprobation_impares{
+  border-left: #456FBD 5px solid;
+}
+
+.container-bar{
+  height: 18.75rem;
+  background-color: #D1D1D1;
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 0.2rem;
+}
+.bar{
+  background: #016A94; 
+  color:#efef;
+}
+.bar-pro{
+  background-color: #016A94;
+}
+.bar-no{
+  background-color: #FF6100;
+
+}
+.bar-genera{
+  background-color: #0094D0;
+}
+
+#container-graphics{
+  display: flex;
+  justify-content: center;
+}

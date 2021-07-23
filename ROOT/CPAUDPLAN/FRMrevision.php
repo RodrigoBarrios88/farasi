@@ -1,0 +1,444 @@
+<?php
+include_once('html_fns_ejecucion.php');
+validate_login("../");
+$usuario = $_SESSION["codigo"];
+
+$categoriasIn = $_SESSION["categorias_in"];
+//$_POST
+$ClsAud = new ClsAuditoria();
+$ClsEje = new ClsEjecucion();
+$hashkey = $_REQUEST["hashkey"];
+$ejecucion = $ClsAud->decrypt($hashkey, $usuario);
+//--
+$result = $ClsEje->get_ejecucion($ejecucion, '', '');
+if (is_array($result)) {
+	$i = 0;
+	foreach ($result as $row) {
+		$ejecucion = trim($row["eje_codigo"]);
+		$codigo_audit = trim($row["audit_codigo"]);
+		$ponderacion_audit = trim($row["audit_ponderacion"]);
+		$sede = utf8_decode($row["sed_nombre"]);
+		$direccion = utf8_decode($row["sed_direccion"]) . ", " . utf8_decode($row["sede_municipio"]);
+		$departamento = utf8_decode($row["dep_nombre"]);
+		$categoria = utf8_decode($row["cat_nombre"]);
+		$nombre = utf8_decode($row["audit_nombre"]);
+		$usuario_nombre = utf8_decode($row["usuario_nombre"]);
+		$strFirma = trim($row["eje_firma"]);
+		//--
+		$fecha_inicio = trim($row["eje_fecha_inicio"]);
+		$fecha_inicio = cambia_fechaHora($fecha_inicio);
+		$fecha_inicio = substr($fecha_inicio, 0, 16);
+		//--
+		$fecha_finaliza = trim($row["eje_fecha_final"]);
+		$fecha_finaliza = cambia_fechaHora($fecha_finaliza);
+		$fecha_finaliza = substr($fecha_finaliza, 0, 16);
+		//--
+		$fecha_progra = trim($row["pro_fecha"]);
+		$fecha_progra = cambia_fecha($fecha_progra);
+		$hora_progra = substr($row["pro_hora"], 0, 5);
+		$fecha_progra = "$fecha_progra $hora_progra";
+		$obs = utf8_decode($row["pro_observaciones"]);
+		$responsable = utf8_decode($row["eje_responsable"]);
+		$EjeObservacion = utf8_decode($row["eje_observaciones"]);
+		//--
+		$strFirma1 = trim($row["eje_firma_evaluador"]);
+		$strFirma2 = trim($row["eje_firma_evaluado"]);
+		$correos = trim(strtolower($row["eje_correos"]));
+		$situacion = trim($row["eje_situacion"]);
+		$nota = trim($row["eje_nota"]);
+	}
+}
+if (file_exists('../../CONFIG/Fotos/AUDFIRMAS/' . $strFirma1 . '.jpg') && $strFirma1 != "") {
+	$strFirma1 = 'Fotos/AUDFIRMAS/' . $strFirma1 . '.jpg';
+} else {
+	$strFirma1 = "img/imageSign.jpg";
+}
+if (file_exists('../../CONFIG/Fotos/AUDFIRMAS/' . $strFirma2 . '.jpg') && $strFirma2 != "") {
+	$strFirma2 = 'Fotos/AUDFIRMAS/' . $strFirma2 . '.jpg';
+} else {
+	$strFirma2 = "img/imageSign.jpg";
+}
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<?php echo head("../"); ?>
+</head>
+
+<body class="">
+	<div class="wrapper ">
+		<?php echo sidebar("../", "auditoria"); ?>
+		<div class="main-panel">
+			<?php echo navbar("../"); ?>
+			<div class="content">
+				<?php if ($situacion == 1) { ?>
+					<div class="row">
+						<div class="col-md-12">
+							<h5 class="alert alert-info text-center">
+								<i class="fa fa-info-circle"></i> Auditor&iacute;a en proceso (abierta) desde <?php echo $fecha_inicio; ?>...
+							</h5>
+						</div>
+					</div>
+				<?php } else { ?>
+					<div class="row">
+						<div class="col-md-12">
+							<h5 class="alert alert-success text-center">
+								<i class="fa fa-check-circle"></i> Nota de Evaluaci&oacute;n <?php echo $nota; ?>
+							</h5>
+						</div>
+					</div>
+				<?php } ?>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card demo-icons">
+							<div class="card-header">
+								<h5 class="card-title">
+									<i class="nc-icon nc-pin-3"></i> Ubicaci&oacute;n
+									<button type="button" class="btn btn-white btn-lg sin-margin pull-right" onclick="window.history.back();"><small><i class="fa fa-chevron-left"></i> Atr&aacute;s</small></button>
+								</h5>
+							</div>
+							<div class="card-body all-icons">
+								<div class="row">
+									<div class="col-xs-6 col-md-6 text-left"> </div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12" id="result">
+										<div class="row">
+											<div class="col-md-12">
+												<label>Sede:</label>
+												<input type="text" class="form-control" value="<?php echo $sede; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Direcci&oacute;n:</label><br>
+												<input type="text" class="form-control" value="<?php echo $direccion; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Departamento:</label>
+												<input type="text" class="form-control" value="<?php echo $departamento; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Fecha y Hora de Programaci&oacute;n:</label><br>
+												<input type="text" class="form-control" value="<?php echo $fecha_progra; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Responsable o Evaluado: </label>
+												<input type="text" class="form-control" value="<?php echo $responsable; ?>" disabled />
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card demo-icons">
+							<div class="card-header">
+								<h5 class="card-title">
+									<i class="nc-icon nc-bullet-list-67"></i> Informaci&oacute;n
+									<a class="btn btn-white btn-lg sin-margin pull-right" href="CPREPORTES/REPrevision.php?ejecucion=<?php echo $ejecucion; ?>" target="_blank"><small><i class="fa fa-print"></i> Imprimir</small></a>
+								</h5>
+							</div>
+							<div class="card-body all-icons">
+								<div class="row">
+									<div class="col-lg-12" id="result">
+										<div class="row">
+											<div class="col-md-12">
+												<label>Categor&iacute;a:</label>
+												<input type="text" class="form-control" value="<?php echo $categoria; ?>" disabled />
+												<input type="hidden" id="ejecucion" name="ejecucion" value="<?php echo $ejecucion; ?>" />
+												<input type="hidden" id="reqfoto" name="reqfoto" value="<?php echo $requiere_fotos; ?>" />
+												<input type="hidden" id="reqfirma" name="reqfirma" value="<?php echo $requiere_firma; ?>" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Cuestionario de Auditor&iacute;a:</label>
+												<input type="text" class="form-control" value="<?php echo $nombre; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Fecha y Hora de Inicio:</label><br>
+												<input type="text" class="form-control" value="<?php echo $fecha_inicio; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Fecha y Hora de Finalizaci&oacute;n:</label><br>
+												<input type="text" class="form-control" value="<?php echo $fecha_finaliza; ?>" disabled />
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<label>Usuario que registr&oacute;:</label><br>
+												<input type="text" class="form-control" value="<?php echo $usuario_nombre; ?>" disabled />
+											</div>
+										</div>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card demo-icons">
+							<div class="card-body all-icons">
+								<div class="row">
+									<div class="col-md-12">
+										<label>Observaciones de Programaci&oacute;n:</label><br>
+										<textarea class="form-control text-justify" rows="4" disabled><?php echo $obs; ?></textarea>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<?php
+				$result_seccion = $ClsAud->get_secciones('', $codigo_audit, 1);
+				if (is_array($result_seccion)) {
+					$i = 1;
+					foreach ($result_seccion as $row_seccion) {
+						$seccion_codigo = $row_seccion["sec_codigo"];
+						$titulo = trim($row_seccion["sec_numero"]) . ". " . utf8_decode($row_seccion["sec_titulo"]);
+						$proposito = utf8_decode($row_seccion["sec_proposito"]);
+						$proposito = nl2br($proposito);
+				?>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card demo-icons">
+									<div class="card-header">
+										<h5 class="card-title"><?php echo $titulo; ?></h5>
+									</div>
+									<div class="card-body all-icons">
+										<?php
+										$result = $ClsAud->get_pregunta('', $codigo_audit, $seccion_codigo, 1);
+										if (is_array($result)) {
+											$i = 1;
+											foreach ($result as $row) {
+												$pregunta_codigo = $row["pre_codigo"];
+												$pregunta_tipo = $row["pre_tipo"];
+												$peso = $row["pre_peso"];
+												$pregunta = utf8_decode($row["pre_pregunta"]);
+												$pregunta = nl2br($pregunta);
+												//--
+												$respuesta = '0';
+												$observacion = '';
+												$aplicaActive = 'active';
+												$aplica_desc = 'Aplica';
+												$aplica = '';
+												$result_respuesta = $ClsEje->get_respuesta($ejecucion, $codigo_audit, $pregunta_codigo);
+												if (is_array($result_respuesta)) {
+													foreach ($result_respuesta as $row_respuesta) {
+														$aplica = utf8_decode($row_respuesta["resp_aplica"]);
+														$respuesta = utf8_decode($row_respuesta["resp_respuesta"]);
+														$observacion = utf8_decode($row_respuesta["resp_observacion"]);
+													}
+													$aplicaActive = ($aplica == 1) ? "active" : "";
+													$aplica_desc = ($aplica == 1) ? '<i class="fa fa-check"></i> Aplica' : '<i class="fa fa-times"></i> No Aplica';
+												}
+												$salida = "";
+												if ($pregunta_tipo == 1) {
+													$salida .= '<div class="form-group">';
+													$salida .= '<input type="text" class = "form-control text-center" value="' . $respuesta . '" disabled />';
+													$salida .= '</div>';
+												} else if ($pregunta_tipo == 2) {
+													switch ($respuesta) {
+														case 1:
+															$elemento = 'SI - ' . $peso . ' pts.';
+															break;
+														case 2:
+															$elemento = 'NO';
+															break;
+														default:
+															$elemento = '-';
+															break;
+													}
+													$salida .= '<div class="form-group">';
+													$salida .= '<input type="text" class = "form-control text-center" value="' . $elemento . '" disabled />';
+													$salida .= '</div>';
+												} else if ($pregunta_tipo == 3) {
+													switch ($respuesta) {
+														case 1:
+															$elemento = 'SATISFACTORIO';
+															break;
+														case 2:
+															$elemento = 'NO SATISFACTORIO';
+															break;
+														default:
+															$elemento = '-';
+															break;
+													}
+													$salida .= '<div class="form-group">';
+													$salida .= '<input type="text" class = "form-control text-center" value="' . $elemento . '" disabled />';
+													$salida .= '</div>';
+												}
+												//////// IMAGENES ///////
+												$result = $ClsEje->get_fotos('', $ejecucion, $codigo_audit, $pregunta_codigo);
+												$strFoto = "";
+												$foto = "";
+												if (is_array($result)) {
+													foreach ($result as $row) {
+														$fotCodigo = trim($row["fot_codigo"]);
+														$foto = trim($row["fot_foto"]);
+														if (file_exists('../../CONFIG/Fotos/AUDITORIA/' . $foto . '.jpg') || $foto != "") {
+															$strFoto .= '<img onclick="abrir();verFoto(' . $fotCodigo . ',' . $codigo_audit . ',' . $pregunta_codigo . ',' . $ejecucion . ');" class="img-upload" src="../../CONFIG/Fotos/AUDITORIA/' . $foto . '.jpg" alt="...">';
+														} else {
+															$strFoto .= '<img class="img-upload" src="../../CONFIG/img/imagePhoto.jpg" alt="...">';
+														}
+													}
+												} else {
+													$strFoto = '<img class="img-demo" src="../../CONFIG/img/imagePhoto.jpg" alt="...">';
+												}
+
+										?>
+												<div class="row">
+													<div class="col-xs-2 col-md-1 text-center"><strong><?php echo $i; ?>.</strong></div>
+													<div class="col-xs-10 col-md-10">
+														<p class="text-justify"><?php echo $pregunta . ""; ?></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-1 col-xs-1"></div>
+													<div class="col-md-6 col-xs-11 text-left">
+														<div class="row">
+															<div class="col-md-6 col-xs-6">
+																<?php echo $salida; ?>
+															</div>
+															<div class="col-md-3 col-xs-3"><label>Peso:</label> <strong><?php echo $peso; ?></strong></div>
+															<div class="col-md-3 col-xs-3 text-right">
+																<strong><?php echo $aplica_desc; ?></strong>
+															</div>
+														</div>
+														<br>
+														<div class="row">
+															<div class="col-md-12 col-xs-12">
+																<textarea class="form-control" rows="4" disabled><?php echo $observacion; ?></textarea>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-5 col-xs-8 col-xs-offset-2 text-center">
+														<br>
+														<div class="fileinput fileinput-new text-center" data-provides="fileinput">
+															<div class="">
+																<?php echo $strFoto; ?>
+															</div>
+														</div>
+														<p>Foto(s)</p>
+													</div>
+												</div>
+												<br>
+										<?php
+												$i++;
+											}
+										} else {
+										}
+										?>
+
+									</div>
+								</div>
+							</div>
+						</div>
+				<?php
+					}
+				}
+				?>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card demo-icons">
+							<div class="card-header">
+								<h5 class="card-title"><i class="nc-icon nc-briefcase-24"></i> Cierre del Formulario de Auditor&iacute;a</h5>
+							</div>
+							<div class="card-body all-icons">
+								<div class="row">
+									<div class="col-md-6 text-center">
+										<div class="fileinput fileinput-new text-center" data-provides="fileinput">
+											<div class="fileinput-new thumbnail">
+												<img src="../../CONFIG/<?php echo $strFirma1; ?>" alt="...">
+											</div>
+										</div>
+										<p>Firma Auditor(a)</p>
+									</div>
+									<div class="col-md-6 text-center">
+										<div class="fileinput fileinput-new text-center" data-provides="fileinput">
+											<div class="fileinput-new thumbnail">
+												<img src="../../CONFIG/<?php echo $strFirma2; ?>" alt="...">
+											</div>
+										</div>
+										<p>Firma Evaluado(a)</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 ml-auto mr-auto">
+										<label>Correos de Notificaci&oacute;n: </label>
+										<input type="text" class="form-control" value="<?php echo $correos; ?>" disabled />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 ml-auto mr-auto">
+										<label>Responsable o Evaluado: </label>
+										<input type="text" class="form-control" value="<?php echo $responsable; ?>" disabled />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-10 ml-auto mr-auto">
+										<label>Observaciones:</label>
+										<textarea class="form-control" rows="5" disabled><?php echo $EjeObservacion; ?></textarea>
+									</div>
+								</div>
+								<br>
+								<div class="row">
+									<div class="col-md-6 ml-auto mr-auto text-center">
+										<button type="button" class="btn btn-default btn-lg" onclick="window.history.back();"><span class="fa fa-chevron-left"></span> Regresar</button>
+										<?php if ($situacion == 1 || $situacion == 2 || $situacion == 5) { ?>
+											<a class="btn btn-white btn-lg" href="FRMcuestionario.php?hashkey3=<?php echo $hashkey; ?>"><i class="fa fa-pencil"></i> Editar</a>
+										<?php } else { ?>
+											<button class="btn btn-white btn-lg" disabled><i class="fa fa-pencil"></i> Editar</button>
+										<?php } ?>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php echo footer() ?>
+		</div>
+	</div>
+	<?php echo modal("../"); ?>
+	<?php echo scripts("../"); ?>
+	<script type="text/javascript" src="../assets.1.2.8/js/modules/auditoria/ejecucion.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.dataTables-example').DataTable({
+				pageLength: 100,
+				responsive: true,
+				dom: '<"html5buttons"B>lTfgitp',
+				buttons: [
+
+				]
+			});
+
+			$('.select2').select2({ width: '100%' });
+		});
+	</script>
+
+</body>
+</html>

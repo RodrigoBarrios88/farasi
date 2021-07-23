@@ -1,0 +1,39 @@
+.sqr-pendiente{
+   color: #DBDBDB;
+}
+.sqr-finalizado{
+   color: #8FC48D;
+}
+.sqr-success{
+   color: #1D9619;
+}
+.sqr-warning{
+   color: #fbc658;
+}
+.sqr-info{
+   color: #319AB7;
+}
+.sqr-default{
+   color: #ADADAD;;
+}
+
+.ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
+   stroke: #8FC48D;
+}
+
+.ct-series-b .ct-bar, .ct-series-b .ct-line, .ct-series-b .ct-point, .ct-series-b .ct-slice-donut {
+   stroke: #DBDBDB;
+}
+
+
+
+.sqr-si{
+   color: #2582AA;
+}
+.sqr-no{
+   color: #BCBCBC;
+}
+.c3-chart-arcs .c3-chart-arcs-background {
+   fill: #BCBCBC;
+   stroke: none;
+}

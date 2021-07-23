@@ -1,0 +1,257 @@
+[13-Oct-2020 10:25:28 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/5599112f116ede78d3.jpg' in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/demo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(301): FPDF->Image('../../../CONFIG...', 145, 117, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/demo/ROOT/recursos/fpdf/fpdf.php on line 272
+[29-Apr-2021 22:26:21 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/248a3d0a57622106e558.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[29-Apr-2021 22:26:50 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/1bc23418362808379268.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 146, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:55:22 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/7a58065605126e81eef.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:55:30 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/94d0e6622e019015808b.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:55:38 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/62ac1d004875065f2d6c.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:56:04 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/248a3d0a57622106e558.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:57:28 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/7a58065605126e81eef.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:57:31 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/94d0e6622e019015808b.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:57:33 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/62ac1d004875065f2d6c.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[30-Apr-2021 12:57:35 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/248a3d0a57622106e558.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 14:39:37 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 422
+[03-May-2021 14:39:37 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 422
+[03-May-2021 16:10:42 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/a17169a788142b6207.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 205, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:10:47 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/a17169a788142b6207.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 205, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:11:43 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 422
+[03-May-2021 16:11:43 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 422
+[03-May-2021 16:11:43 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 422
+[03-May-2021 16:13:13 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/6602864370166db26c2.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:13:34 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/7ce1267b8f40ae41729.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 117, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:14:03 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/248a3d0a57622106e558.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:15:04 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/62ac1d004875065f2d6c.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:15:11 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/7a58065605126e81eef.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:15:17 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/94d0e6622e019015808b.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:15:26 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/5b01566773cb2732782.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:15:32 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/6c0374b587824b4a414.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:16:50 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/5b01566773cb2732782.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 16:17:02 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/5b01566773cb2732782.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 17:35:57 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[03-May-2021 17:36:10 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/6c0374b587824b4a414.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 17:36:20 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/5b01566773cb2732782.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 17:36:26 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/94d0e6622e019015808b.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 17:36:52 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/6c0374b587824b4a414.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[03-May-2021 17:37:07 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/6c0374b587824b4a414.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 09:46:31 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 09:46:32 America/Guatemala] PHP Warning:  Division by zero in /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php on line 419
+[04-May-2021 10:04:42 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/94d0e6622e019015808b.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 166, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 11:25:04 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/1bc23418362808379268.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 146, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 11:25:06 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/1bc23418362808379268.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 146, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 11:25:08 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/1bc23418362808379268.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 146, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 11:39:43 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/7a58065605126e81eef.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 123, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272
+[04-May-2021 13:58:14 America/Guatemala] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: ../../../CONFIG/Fotos/AUDITORIA/1bc23418362808379268.jpg' in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php:272
+Stack trace:
+#0 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(1245): FPDF->Error('Not a JPEG file...')
+#1 /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php(886): FPDF->_parsejpg('../../../CONFIG...')
+#2 /home/farasi28/public_html/ecotermo/ROOT/CPAUDEJECUCION/CPREPORTES/REPrevision.php(299): FPDF->Image('../../../CONFIG...', 145, 146, 50, 35, 'JPG', '')
+#3 {main}
+  thrown in /home/farasi28/public_html/ecotermo/ROOT/recursos/fpdf/fpdf.php on line 272

@@ -1,0 +1,7 @@
+.fc-event[href], .fc-event.fc-draggable {
+    cursor: pointer;
+}
+
+.fc-event, .fc-agenda .fc-event-time, .fc-event a {
+    padding: 6px 6px;
+}
